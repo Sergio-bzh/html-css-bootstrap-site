@@ -1,3 +1,81 @@
 body {
   background-color: antiquewhite;
+  margin: 0;
 }
+
+ /* Mise en place d'un affichage mobile-first */
+header  {
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+header > nav > ul > li {
+  padding-right: 5px;
+}
+
+/* L'historique des évenements passés ne s'affiche pas sur les petits écrans */
+.nav-item, aside {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.image-article {
+  width: 90vw;
+  padding-left: 20px;
+}
+
+/* p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+footer {
+  background-color: lightpink;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+}
+
+.copyleft {
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+display: flex; A acitver sur Nav pour les plus grandes tailles d'écran
+align-items: center;
+text-decoration:none;
+*/
