@@ -24,6 +24,10 @@ h1, h2 {
   margin-left: 10px;
 }
 
+p {
+  padding: 5px;
+}
+
 .branding {
   display: flex;
   align-items: center;
@@ -39,7 +43,12 @@ header > nav > ul > li {
   padding-right: 5px;
 }
 
+header > nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
 /* L'historique des évenements passés ne s'affiche pas sur les petits écrans */
+/* Certains éléments de la navbar ne s'affichent pas non plus sur les petits écrans */
 .nav-item, aside {
   display: none;
 }
@@ -63,19 +72,26 @@ header > nav > ul > li {
 
 footer {
   background-color: lightpink;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  padding-right: 40px;
+}
+
+.footer-item>ul>li>a:hover {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .copyleft {
-  background-color: lightpink;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  transform: rotate(180deg);
 }
 
-/* 
-display: flex; A acitver sur Nav pour les plus grandes tailles d'écran
-align-items: center;
-text-decoration:none;
-*/
+/* Début de mise en place du style pour les écrans plus grands*/
+
