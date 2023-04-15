@@ -53,6 +53,10 @@ header > nav > ul > li > a:hover {
   display: none;
 }
 
+main {
+  background: linear-gradient(45deg, transparent, lightgray);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column-reverse;
@@ -69,6 +73,10 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.register-form {
+  width: 100vw;
 }
 
 footer {

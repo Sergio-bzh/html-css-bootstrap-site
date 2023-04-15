@@ -7,8 +7,8 @@
   <title>Eval HTML-CSS & BootStrap</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
-<header>
-    <body>
+<body>
+  <header>
     <div class="branding">
       <img class="logo" src="../images/logo_640.webp" alt="Logo de l'association">
       <h1>Association Bouliste Congardaise</h1>
@@ -22,22 +22,22 @@
     </nav>
   </header>
     <main>
+      <!-- Mise en place du formulaire d'inscription sans BootStrap-->
       <h1>Formulaire d'inscription :</h1>
-        <!-- Mise en place du formulaire d'inscription sans BootStrap-->
         <form class="register-form" action="fakeScript.php" method="post">
           <fieldset>
             <label>Informations personneslles :</label>
             <div>
               <label for="civility">Mme.
-                <input type="radio" name="civility" id="civility" value="Mme.">
+                <input type="radio" name="civility" id="madam" value="Mme.">
               </label>
               <label for="civility">M.
-                <input type="radio" name="civility" id="civility" value="M.">
+                <input type="radio" name="civility" id="sir" value="M.">
               </label>
             </div>
             <div>
               <label for="firstName">Prénom :</label>
-              <input type="text" name="firstName" id="firstName" placeholder="Votre prénom"required>
+              <input type="text" name="firstName" id="firstName" placeholder="Votre prénom" required>
             </div>
             <div>
               <label for="lastName">Nom :</label>
