@@ -90,11 +90,20 @@ footer {
 
 .footer-item {
   padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-item>ul>li>a:hover {
   font-style: italic;
   text-decoration: underline;
+}
+
+.sociaux { /* j'ai conscience que cette classe (.sociaux) cible les mêmes éléments que la pseudo classe précédente (.footer-item>ul>li>a:hover) */
+  width: 32px;
+  background-color: #fff;
+  border-radius: 7px;
 }
 
 .copyleft {
