@@ -1,14 +1,7 @@
+/* RESET */
 body {
   background-color: antiquewhite;
   margin: 0;
-}
-
- /* Mise en place d'un affichage mobile-first */
-header  {
-  background-color: lightpink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 ul {
@@ -19,13 +12,22 @@ a {
   text-decoration: none;
 }
 
+ /* Mise en place d'un affichage mobile-first */
+header  {
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1, h2 {
-  font-size: 20px;
-  margin-left: 10px;
+  font-size: 1.5rem;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 p {
-  padding: 5px;
+  padding: 1%;
 }
 
 .branding {
@@ -35,15 +37,17 @@ p {
 
 .logo {
   width: 20%;
-  padding-left: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-header > nav > ul > li {
-  padding-right: 5px;
+nav > ul > li {
+  padding-right: 10px;
 }
 
-header > nav > ul > li > a:hover {
+nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
@@ -62,7 +66,7 @@ header > nav > ul > li > a:hover {
 
 .image-article {
   width: 90vw;
-  padding-left: 20px;
+  padding-left: 1%;
 }
 
 p {
@@ -92,7 +96,7 @@ footer {
   justify-content: center;
 }
 
-.footer-item>ul>li>a:hover {
+.footer-item > ul > li > a:hover {
   font-style: italic;
   text-decoration: underline;
 }
@@ -108,24 +112,25 @@ footer {
   transform: rotate(180deg);
 }
 
-/* Début de mise en place du style pour les écrans plus grands*/
-@media screen and (min-width: 768px) and (orientation: landscape) {
-  nav > ul > li {
-    display: inline;
+/* Début de mise en place du style pour les écrans plus grands de type tablette */
+@media screen and (min-width: 768px) and (min-height: 500px) {
+  .nav-item, aside {
+    display: initial;
   }
 
-  .nav-item, aside {
-    display:initial;
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > ul > li {
+    margin-bottom: 10px;
   }
 
   .wrapper {
     flex-direction: row-reverse;
     align-items: flex-start;
     background: linear-gradient(90deg, antiquewhite, lightgray);
-  }
-
-  main, aside {
-    background-color: transparent;
   }
 
   main {
@@ -151,20 +156,25 @@ footer {
   }
 
   aside > div {
-    margin: 20px;
+    margin: 30px;
     font-size: 1.5rem;
-    font-weight: bold;
+  }
+
+  @media screen and (orientation: landscape) {
+    aside > div {
+      font-weight: bold;
+    }
   }
 
   .form-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
+    margin-left: 25%;
     margin-bottom: 10px;
   }
 
   .register-form {
     width: 50vw;
-
   }
 }
+/* Début de mise en place du style pour les écrans de type PC */
