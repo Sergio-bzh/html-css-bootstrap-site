@@ -26,10 +26,6 @@ h1, h2 {
   margin-right: 1%;
 }
 
-p {
-  padding: 1%;
-}
-
 .branding {
   display: flex;
   align-items: center;
@@ -69,15 +65,36 @@ nav > ul > li > a:hover {
   padding-left: 1%;
 }
 
+.about-item-2 {
+  display: none;
+}
+
 p {
+  padding: 1%;
   width: 90vw;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.form-bg-color, .about-bg-color {
+  background: linear-gradient(90deg, antiquewhite, lightgray);
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
 .register-form {
   width: 100vw;
+}
+
+.validate { /* Bouton stylisé à la main pour comparer avec le bouton stylisé en BOOTSTRAP */
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  height: 38px;
 }
 
 footer {
@@ -130,7 +147,6 @@ footer {
   .wrapper {
     flex-direction: row-reverse;
     align-items: flex-start;
-    background: linear-gradient(90deg, antiquewhite, lightgray);
   }
 
   main {
@@ -142,10 +158,10 @@ footer {
   }
 
   p {
-    width: 90%;
-    overflow: auto;
+    width: 100%;
+    overflow:inherit;
     text-overflow: initial;
-    white-space: normal;
+    white-space: normal ;
   }
 
   aside {
@@ -175,6 +191,15 @@ footer {
 
   .register-form {
     width: 50vw;
+  }
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-item-2 {
+    display: none;
   }
 }
 /* Début de mise en place du style pour les écrans de type PC */
