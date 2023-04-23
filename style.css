@@ -90,6 +90,13 @@ p {
   width: 100vw;
 }
 
+.validate { /* Bouton stylisé à la main pour comparer avec le bouton stylisé en BOOTSTRAP */
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  height: 38px;
+}
+
 footer {
   background-color: lightpink;
 }
