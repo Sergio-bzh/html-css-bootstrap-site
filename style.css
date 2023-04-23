@@ -122,6 +122,8 @@ footer {
   width: 32px;
   background-color: #fff;
   border-radius: 7px;
+  margin-top: 35%;
+  justify-self: center;
 }
 
 .copyleft {
