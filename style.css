@@ -77,13 +77,13 @@ p {
   white-space: nowrap;
 }
 
-.form-bg-color, .about-bg-color {
-  background: linear-gradient(90deg, antiquewhite, lightgray);
-}
-
 .about-content {
   display: flex;
   justify-content: center;
+}
+
+.form-bg-color, .about-bg-color {
+  background: linear-gradient(90deg, antiquewhite, lightgray);
 }
 
 .register-form {
@@ -95,6 +95,16 @@ p {
   background-color: green;
   color: white;
   height: 38px;
+}
+
+.event-image {
+  width: 100vw;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.event-text {
+  display: none;
 }
 
 footer {
@@ -160,29 +170,41 @@ footer {
   }
 
   p {
-    width: 100%;
-    overflow:inherit;
+    width: 100vw;
+    overflow: visible;
     text-overflow: initial;
     white-space: normal ;
-  }
-
+  }  
+  
   aside {
     width: 38%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
   }
-
+  
   aside > div {
     margin: 30px;
     font-size: 1.5rem;
   }
-
+  
   @media screen and (orientation: landscape) {
     aside > div {
       font-weight: bold;
     }
-  }
+
+    .event-image {
+      margin: 0;
+    }
+
+    .event-text {
+      display: inline-block;
+      width: 100vw;
+      overflow: visible;
+      text-overflow:initial;
+      white-space: normal ;
+    }
+  }  
 
   .form-wrapper {
     display: flex;
