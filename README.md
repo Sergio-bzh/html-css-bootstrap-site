@@ -7,3 +7,9 @@ Récupération des images et autres logos en essayant d'utiliser des images libr
 Déploiement du site sur HEROKU pour tester son comportement sur différents appareils sans BOOTSTRAP.
 Ajout de BOOTSTRAP sur deux pages pour styliser quelques éléments en utilisant les composants BS.
 Modification du header des du site pour ajouter un "dropdown button" BS sur la "navbar"
+
+# Mise en ligne du site
+Déploiement sur Heroku
+Test sur mobile + ajustements
+Test sur tablette + ajustements
+Test sur PC portable et fixe + ajustements
