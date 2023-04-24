@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET Marie et Sergio */
 body {
   background-color: antiquewhite;
   margin: 0;
@@ -18,6 +18,7 @@ header  {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.5%;
 }
 
 h1, h2 {
@@ -47,9 +48,7 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-/* L'historique des évenements passés ne s'affiche pas sur les petits écrans */
-/* Certains éléments de la navbar ne s'affichent pas non plus sur les petits écrans */
-aside {
+aside { /* L'historique des rencontres passées ne s'affiche pas sur les petits écrans */
   display: none;
 }
 
@@ -61,7 +60,7 @@ aside {
 }
 
 .image-article {
-  width: 90vw;
+  width: 99vw;
   padding-left: 1%;
 }
 
@@ -71,7 +70,7 @@ aside {
 
 p {
   padding: 1%;
-  width: 90vw;
+  width: 100vw;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -141,7 +140,7 @@ footer {
   transform: rotate(180deg);
 }
 
-/* Début de mise en place du style pour les écrans plus grands de type tablette */
+/* Début de mise en place du style pour les écrans de type tablette */
 @media screen and (min-width: 768px) and (min-height: 500px) {
   aside {
     display: initial;
@@ -170,7 +169,7 @@ footer {
   }
 
   p {
-    width: 100vw;
+    width: 100%;
     overflow: visible;
     text-overflow: initial;
     white-space: normal ;
@@ -227,3 +226,42 @@ footer {
   }
 }
 /* Début de mise en place du style pour les écrans de type PC */
+
+@media screen and (min-width: 1100px) {
+  p {
+    width: 98vw;
+  }
+
+  .about-item-2 {
+    display:inline-block;
+  }
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas:
+    "about-item-1 about-item-3"
+    "about-item-2 about-item-2";
+  }
+
+  .about-item-1 {
+    grid-area: about-item-1;
+  }
+
+  .about-item-2 {
+    grid-area: about-item-2;
+    margin-left: 30px;
+    margin-bottom: 2%;
+  }
+
+  .about-item-2 > h2, .about-item-3 > h2 {
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .about-item-3 {
+    grid-area: about-item-3;
+    margin-top: 20px;
+  }
+}
